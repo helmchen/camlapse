@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+            xmlns:ui="http://java.sun.com/jsf/facelets">
+    <body>
+        <ui:composition template="../WEB-INF/templates/bootstrap.xhtml">
+            <ui:define name="content">
+                <h1>Projekt bearbeiten 1</h1>
+                <f:view>
+                    <h:form>
+                        <h1><h:outputText value="Create/Edit"/></h1>
+                        <h:panelGrid columns="2">
+                            <h:outputLabel value="ProjectId:" for="projectId" />
+                            <h:inputText id="projectId" value="#{test.projectId}" title="ProjectId" required="true" requiredMessage="The ProjectId field is required."/>
+                            <h:outputLabel value="Name:" for="name" />
+                            <h:inputText id="name" value="#{test.name}" title="Name" required="true" requiredMessage="The Name field is required."/>
+                            <h:outputLabel value="CaptureBegin:" for="captureBegin" />
+                       
+                            <h:inputText id="captureBegin" value="#{test.captureBegin}" title="CaptureBegin" required="true" requiredMessage="The CaptureBegin field is required.">
+                                <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                            </h:inputText>
+                            <h:outputLabel value="CaptureEnd:" for="captureEnd" />
+                            <h:inputText id="captureEnd" value="#{test.captureEnd}" title="CaptureEnd" required="true" requiredMessage="The CaptureEnd field is required.">
+                                <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
+                            </h:inputText>
+                            <h:outputLabel value="CaptureInterval:" for="captureInterval" />
+                            <h:inputText id="captureInterval" value="#{test.captureInterval}" title="CaptureInterval" required="true" requiredMessage="The CaptureInterval field is required."/>
+                            <h:outputLabel value="OwnerFk:" for="ownerFk" />
+                            <h:inputText id="ownerFk" value="#{test.ownerFk}" title="OwnerFk" />
+                            <h:outputLabel value="WebcamFk:" for="webcamFk" />
+                            <h:inputText id="webcamFk" value="#{test.webcamFk}" title="WebcamFk" required="true" requiredMessage="The WebcamFk field is required."/>
+                            <h:outputLabel value="PathName:" for="pathName" />
+                            <h:inputText id="pathName" value="#{test.pathName}" title="PathName" required="true" requiredMessage="The PathName field is required."/>
+                        </h:panelGrid>
+                        <h:button class="btn btn-primary" alt="Save">Speichern</h:button>
+                    </h:form>
+                </f:view>
+
+                
+                <p>Hier kommt noch ein Wenig Text.</p>
+                <button class="btn btn-warning" type="submit">Knopf</button>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+
