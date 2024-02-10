@@ -21,7 +21,7 @@
         <dependencies.version.jpa>2.0.3</dependencies.version.jpa>
         <dependencies.version.eclipselink>2.3.0</dependencies.version.eclipselink>
         <dependencies.version.richfaces>4.3.0-SNAPSHOT</dependencies.version.richfaces>
-        <dependencies.version.slf4j>1.6.4</dependencies.version.slf4j>
+        <dependencies.version.slf4j>[1.7.26,)</dependencies.version.slf4j>
         <dependencies.version.xuggler>5.4</dependencies.version.xuggler>
         <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
     </properties>        
